@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 850829667}
   - component: {fileID: 850829666}
   m_Layer: 0
-  m_Name: 58-Breakout-Tiles
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,7 +319,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &850829667
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -388,7 +388,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 850829665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.38, y: 5.52, z: 0}
+  m_LocalPosition: {x: 9.25, y: 4.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -593,8 +593,9 @@ GameObject:
   - component: {fileID: 1263249144}
   - component: {fileID: 1263249143}
   - component: {fileID: 1263249145}
+  - component: {fileID: 1263249146}
   m_Layer: 0
-  m_Name: 49-Breakout-Tiles
+  m_Name: Padlle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -653,7 +654,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1263249142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.83, y: 0.48, z: 0}
+  m_LocalPosition: {x: 14.777, y: 0.328, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -674,6 +675,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 2.44, y: 0.64}
   m_Direction: 1
+--- !u!114 &1263249146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263249142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb6ccbd438433374fb463d80f74e654a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: 1.22
+  maxX: 14.78
+  screenWidthInUnits: 16
 --- !u!1 &1503929041
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,7 +740,7 @@ GameObject:
   - component: {fileID: 1602356490}
   - component: {fileID: 1602356492}
   m_Layer: 0
-  m_Name: 01-Breakout-Tiles
+  m_Name: BlueBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
