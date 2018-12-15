@@ -9,17 +9,22 @@ public class Ball : MonoBehaviour {
     [SerializeField] Paddle paddle1;
     [SerializeField] float xPush = 2f;
     [SerializeField] float yPush = 15f;
+
     //state
     Vector2 paddleToBallVector;
-
-	// Use this for initialization
-	void Start () {
+    Rigidbody2D myRigidBody2D;
+    
+    // Use this for initialization
+    void Start () {
         paddleToBallVector = transform.position - paddle1.transform.position;
-	}
+        myRigidBody2D = GetComponent<Rigidbody2D>();
+        myRigidBody2D.simulated = false;
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
+        
         if (hasStarted == false)
         {
             LockBallToPadlle();
@@ -29,10 +34,12 @@ public class Ball : MonoBehaviour {
 
     private void LaunchOnMouseClick()
     {
+       
         if (Input.GetMouseButtonDown(0))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(xPush, yPush);
             hasStarted = true;
+            myRigidBody2D.velocity = new Vector2(xPush, yPush);
+            myRigidBody2D.simulated = true; // <-------- add this
         }
     }
 

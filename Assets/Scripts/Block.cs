@@ -21,5 +21,6 @@ public class Block : MonoBehaviour {
     {
         Destroy(gameObject);
         level.BlockDestroyed();
+        FindObjectOfType<GameSession>().AddToScore();
     }
 }

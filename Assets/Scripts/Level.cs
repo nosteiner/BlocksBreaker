@@ -10,17 +10,21 @@ public class Level : MonoBehaviour {
 
     private void Start()
     {
+     
         sceneLoader = FindObjectOfType<SceneLoader>();
     }
     public void CountBreakableBlocks()
     {
         breakableBlocks++;
+    
     }
    public void BlockDestroyed()
     {
         breakableBlocks--;
-        if(breakableBlocks <= 0)
+      
+        if (breakableBlocks <= 0)
         {
+           
             sceneLoader.LoadNextScene();
         }
     }
