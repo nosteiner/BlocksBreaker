@@ -57,7 +57,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: -1.28
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -92,6 +92,7 @@ MonoBehaviour:
   paddle1: {fileID: 114255708074115828, guid: 40e24b4f31205694093523621cf7f5f2, type: 2}
   xPush: 2
   yPush: 20
+  randomFactor: 0.5
 --- !u!212 &212924773821505724
 SpriteRenderer:
   m_ObjectHideFlags: 1
