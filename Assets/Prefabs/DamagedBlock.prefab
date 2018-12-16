@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 61769284514313350}
   - component: {fileID: 114446409333094266}
   m_Layer: 0
-  m_Name: BlueBlock
-  m_TagString: Untagged
+  m_Name: DamagedBlock
+  m_TagString: BreakableBlock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,6 +78,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b5a3b8d6884d74da233e9507f2d04e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHits: 2
+  timesHit: 0
+  hitSprites:
+  - {fileID: 21300000, guid: 7b0f34c935894c4408eca9cd6067b5be, type: 3}
 --- !u!212 &212465715712566584
 SpriteRenderer:
   m_ObjectHideFlags: 1

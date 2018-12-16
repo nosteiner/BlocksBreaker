@@ -566,6 +566,11 @@ Prefab:
       propertyPath: m_UsedByComposite
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114446409333094266, guid: 19cd045eb8e97e3409cad5d414f8eaec,
+        type: 2}
+      propertyPath: maxHits
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19cd045eb8e97e3409cad5d414f8eaec, type: 2}
   m_IsPrefabAsset: 0
