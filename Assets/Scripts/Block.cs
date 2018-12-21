@@ -30,6 +30,7 @@ public class Block : MonoBehaviour {
         if (tag == "BreakableBlock")
         {
             HandleHit();
+
         }
     }
 
